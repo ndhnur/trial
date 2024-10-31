@@ -1,0 +1,291 @@
+/* body{
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("assets/bg.png");    
+} */
+*{
+    font-family: 'Playfair Display', serif;
+}
+body{
+    margin: 0;
+}
+h1, p{
+    text-align: center;
+}
+.jumbotron-img{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow:5px 5px 5px grey;
+    border-radius: 20px;
+}
+
+/* HEADER */
+.main-header {
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    left: 0;
+    height: 48px;  
+ }
+.header-info {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 14px 14px 0 14px;
+}
+.header-info a {
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+.header-info a:hover {
+    background-color: transparent
+}
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    float: left;
+}
+a:hover {
+    background-color: burlywood;
+}
+
+/* JUMBOTRON */
+.jumbotron{
+    margin-top: 5%;
+}
+
+
+/* product */
+section{
+    margin: 50px;
+}
+.title {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+h1, h2, h3, p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.portrait {
+    width: 100%;
+    height: 350px;
+    opacity: 0.5;
+}
+.portrait:hover{
+    opacity: 1;
+}
+
+/* flowers */
+table{
+    width: 100%;
+    background-color: white;
+}
+table, tr, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;	    
+    margin: auto;
+    text-align: center;
+}
+td{
+    padding: 20px;
+}
+thead{
+    background-color: blueviolet;
+    color: white;
+}
+
+
+/* pricing */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tab {
+    background-color: gainsboro;
+    width: 300px;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+h1.name {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: black;
+}
+h2.price {
+    font-size: 28px;
+    color: black;
+    font-weight: 500;
+}
+
+.list {
+    list-style-type: disc;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.list li {
+    margin-top: 20px;
+    color: black;
+}
+
+hr {
+    height: 7px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(142, 75, 219);
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+button {
+    background-color: blueviolet;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    font-size: 20pt;
+    margin: auto;
+  }
+button:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+/* about */
+div.about {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px auto 30px auto;
+    background-color: rgb(249, 205, 255);
+    width: 100%;
+}
+p.about{
+    text-align: justify;
+    margin: auto;
+}
+.about {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+.content{
+    width: 50%;
+}
+div.image-about {
+    margin: auto;
+}
+
+img.about-us {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* footer */
+footer {
+    background-image: linear-gradient(rgb(252, 204, 252), rgb(195, 137, 197));
+}
+
+.main-footer { 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.left-footer {
+    margin-right: auto; 
+    margin-left: 40px;
+}
+
+.right-footer {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.center-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-left {
+    color: blueviolet;
+    text-align: left;
+    width: 100%;
+}
+.info-right {
+    color: blueviolet;
+    text-align: right;
+    width: 100%;
+}
+
+.info-center {
+    color: blueviolet;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid rgb(146, 168, 133);
+}
+i{
+    margin: 0 6px;
+}
+
+
+
+@media (max-width: 600px) {
+    * {
+        font-size: 2vw;
+      }
+
+    body{
+        margin: 0;
+    }
+    .main-header{
+        height: 38px;
+    }
+    .jumbotron{
+        margin-top: 20%;
+    }
+    .left-footer {
+        margin-right: auto; 
+        margin-left: 0;
+    }
+
+    .right-footer {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    div.about{
+        display: block;
+    }
+  }

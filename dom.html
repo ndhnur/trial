@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 8px;
+            font-size: 20pt;
+            margin: auto;
+            border: none;
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="dayMode()" style="background-color: blue; color: white;">Day</button>
+    <button onclick="nightMode()" style="background-color: grey; color: white;">Night</button>
+
+    <script>
+        function dayMode() {
+        document.querySelector("body").style.color = "black";
+        document.querySelector("body").style.
+        backgroundColor = "white"
+        }
+        function nightMode() {
+        document.querySelector("body").style.color = "white";
+        document.querySelector("body").style.
+        backgroundColor = "black"
+        }
+    </script>
+</body>
+</html>
