@@ -1,111 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        button{
-            padding: 8px;
-            font-size: 20pt;
-            margin: auto;
-            border: none;
-            padding: 20px 30px;
-            border-radius: 10px;
-        }
-    </style>
-</head>
-<body>
-    <button onclick="dayMode()" style="background-color: blue; color: white;">Day</button>
-    <button onclick="nightMode()" style="background-color: grey; color: white;">Night</button>
-
-        <section id="pricing">
-            <div class="container">
-              <div class="tab">
-                <div class="tab-header">
-                  <div>
-                   <h1 class="name">Bronze</h1>
-                  </div>
-                  <div>
-                   <h2 class="price"> Under IDR100.000</h2>
-                  </div>
-                </div>
-                <hr>
-                <ul class="list">
-                  <li>Bouquet </li>
-                  <li> <del> Decoration </del> </li>
-                  <li> Vase </li>
-                  <li> One flower type </li>
-                  <li> Lily </li>
-                  <li> Rose </li>
-                  <li> Tulip </li>
-                  <li> <del> Sunflower </del></li>
-                  <li> <del> Baby breath </del> </li> 
-                </ul>
-                <button>Order Now</button>
-              </div>
-          
-              <div class="tab">
-                <div class="tab-header">
-                  <div>
-                   <h1 class="name">Silver</h1>
-                  </div>
-                  <div>
-                   <h2 class="price"> IDR120.000 - IDR900.000</h2>
-                  </div>
-                </div>
-                <hr>
-                <ul class="list">
-                  <li>Bouquet </li>
-                  <li> Decoration </li>
-                  <li> Vase </li>
-                  <li> One flower type </li>
-                  <li> Lily </li>
-                  <li> Rose </li>
-                  <li> Tulip </li>
-                  <li>Sunflower</li>
-                  <li> <del> Baby breath </del> </li> 
-                </ul>
-                <button>Order Now</button>
-              </div>
-
-
-              <div class="tab">
-                <div class="tab-header">
-                  <div>
-                   <h1 class="name">Bronze</h1>
-                  </div>
-                  <div>
-                   <h2 class="price"> Up To IDR1.000.000</h2>
-                  </div>
-                </div>
-                <hr>
-                <ul class="list">
-                    <li>Bouquet </li>
-                    <li> Decoration </li>
-                    <li> Vase </li>
-                    <li> One flower type </li>
-                    <li> Lily </li>
-                    <li> Rose </li>
-                    <li> Tulip </li>
-                    <li>Sunflower</li>
-                    <li> Baby breath </li> 
-                </ul>
-                <button>Order Now</button>
-              </div>
-            </div>
-        </section>
-    <script>
-        function dayMode() {
-        document.querySelector("body").style.color = "black";
-        document.querySelector("body").style.
-        backgroundColor = "white"
-        }
-        function nightMode() {
-        document.querySelector("body").style.color = "white";
-        document.querySelector("body").style.
-        backgroundColor = "black"
-        }
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            button {
+                padding: 8px;
+                font-size: 20pt;
+                margin: auto;
+                border: none;
+                padding: 20px 30px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="dayMode()" style="background-color: blue; color: white">Day</button>
+        <button onclick="nightMode()" style="background-color: grey; color: white">Night</button>
+        <script>
+            function dayMode() {
+                document.querySelector("body").style.color = "black";
+                document.querySelector("body").style.backgroundColor = "white";
+            }
+            function nightMode() {
+                document.querySelector("body").style.color = "white";
+                document.querySelector("body").style.backgroundColor = "black";
+            }
+        </script>
+    </body>
 </html>
